@@ -1,0 +1,80 @@
+#cg-header {
+  margin: 0px;
+  padding: 30px;
+  color: white;
+}
+
+#cg-nav {
+  margin-bottom: 0px;
+}
+
+#cg-bg-container {
+  margin: 0px;
+  padding: 0px;
+}
+
+#img-container {
+  border-radius: 200px;
+  overflow: hidden;
+  width: 200px;
+  height: 200px;
+  margin: auto auto;
+  border: 5px solid white;
+  box-shadow: 3px 1px 1px rgba(0,0,0,0.5);
+  background-color: white;
+
+}
+
+#cg-bg-container img {
+  margin: 0px;
+  padding: 0px;
+  position: absolute;
+  display: block;
+  width: 100%;
+  z-index: -1;
+}
+
+#cg-header {
+  background-image: url('../img/fuji-horizon.jpg');
+  background-position: center;
+  text-align: center;
+  font-family: 'Open Sans', sans-serif
+}
+
+#about-me {
+  font-size: 15px;
+  font-family: 'Open Sans';
+}
+
+section {
+  background-color: white;
+  /*height: 200px;*/
+  border-bottom: 1px solid #aaa;
+  position: relative;
+  padding: 20px 0px;
+}
+
+section.odd {
+  background-color: white;
+}
+
+section.even {
+  background-color: #f5f5f5;
+}
+
+body {
+  height: 100%;
+  background-color: gray;
+}
+
+footer {
+  position: relative;
+  height: 50px;
+  color: gray;
+  background-color: #222;
+}
+
+footer h2{
+  font-size: 16px;
+  font: Verdana;
+}
