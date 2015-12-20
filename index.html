@@ -25,6 +25,10 @@
   }
 }
 
+.fade-in {
+  animation: fadeIn 1.5s;
+}
+
 body {
 	background-color: #121315;
 	color: #88898D;
@@ -51,29 +55,29 @@ body {
 
 #greeting {
   text-align: center;
-
-  animation-duration: 1.5s;
-  animation-name: fadeIn;
 }
-
 #greeting-name {
-  
   font-weight: normal;
 }
 #greeting-name .first-name {
   font-weight: bold;
 }
 
-#contact {
-  animation-duration: 1.5s;
-  animation-name: fadeIn;
-}
+#contact .contact-item a {
+  /* Removing the default styling of a link */
+  text-decoration: none;
+  color: #88898D;
 
+  /* 
+    Constraining the click area of the link to the 
+    logo instead of the whole contact-item
+  */
+  display: inline-block;
+}
 .contact-item {
   padding-top: 20px;
   text-align: center;
 }
-
 .contact-icon {
   display: block;
   font-size: 5em;
@@ -94,19 +98,24 @@ body {
   <div id="monogram"></div>
 </div>
 
-<div id="greeting" class="pure-g">
+<div id="greeting" class="pure-g fade-in">
   <h1 id="greeting-name" class="pure-u-1-1"><span class="first-name">CHRIS</span>GUEVARA</h1>
-  <span id="greeting-msg" class="pure-u-1-1">Let's do awesome stuff.</span>
+  <span id="greeting-msg" class="pure-u-1-1">Let's work on cool stuff.</span>
 </div>
 
-<div id="contact" class="pure-g">
+<div id="contact" class="pure-g fade-in">
   <div class="contact-item pure-u-1 pure-u-sm-1-2">
-  	<span class="contact-icon fa fa-linkedin-square"></span>
-  	<div class="contact-text">linkedin.com/in/christopherguevara</div>
+    <a href="https://linkedin.com/in/christopherguevara">
+  	  <span class="contact-icon fa fa-linkedin-square"></span>
+  	</a>
+    <div class="contact-text">linkedin.com/in/christopherguevara</div>
   </div>
   <div class="contact-item pure-u-1 pure-u-sm-1-2">
-  	<span class="contact-icon fa fa-envelope-o"></span>
+    <a href="mailto:chrismguevara@gmail.com">
+  	  <span class="contact-icon fa fa-envelope-o"></span>
+    </a>
   	<div class="contact-text">chrismguevara@gmail.com</div>
+    
   </div>
 </div>
 
