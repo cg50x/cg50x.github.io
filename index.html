@@ -14,6 +14,18 @@
 
 <style>
 
+@keyframes rotateMonogram {
+  0% {
+    transform: rotate(0deg);
+  }
+  50% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(90deg);
+  }
+}
+
 body {
 	background-color: #121315;
 	color: #88898D;
@@ -34,6 +46,11 @@ body {
   /* Center the monogram */
   margin-left: auto;
   margin-right: auto;
+
+  animation-duration: 1s;
+  animation-name: rotateMonogram;
+
+  transform: rotate(90deg);
 }
 
 #greeting {
