@@ -1,84 +1,93 @@
-<!doctype html>
+<html !DOCTYPE>
 <html>
 <head>
-  <title>Chris Guevara</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <script src="bower_components/jquery/dist/jquery.js"></script>
-  <script src="bower_components/bootstrap/dist/js/bootstrap.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/pure/0.6.0/pure-min.css">
+<!--[if lte IE 8]>
+    <link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.6.0/grids-responsive-old-ie-min.css">
+<![endif]-->
+<!--[if gt IE 8]><!-->
+    <link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.6.0/grids-responsive-min.css">
+<!--<![endif]-->
+<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,600italic,700,700italic,800,800italic' rel='stylesheet' type='text/css'>
 
-  <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
-  <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.css">
-  <link rel="stylesheet" href="assets/css/main.css">
+<style>
+
+body {
+	background-color: #121315;
+	color: #88898D;
+	padding-top: 50px;
+	padding-bottom: 50px;
+}
+
+/* Overwriting Pure css font-family */
+.pure-g [class *="pure-u"] {
+    font-family: 'Open Sans', sans-serif;
+}
+
+#monogram {
+  width: 120px;
+  height: 120px;
+  background-image: url("reset_button.svg");
+  background-size: cover;
+  /* Center the monogram */
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#greeting {
+  text-align: center;
+}
+
+#greeting-name {
+  
+  font-weight: normal;
+}
+#greeting-name .first-name {
+  font-weight: bold;
+}
+
+.contact-item {
+  padding-top: 20px;
+  text-align: center;
+}
+
+.contact-icon {
+  display: block;
+  font-size: 5em;
+  width: 80px;
+  height: 80px;
+  
+  /* Center the contact icon */
+  margin-left: auto;
+  margin-right: auto;
+}
+
+</style>
+
 </head>
 <body>
 
-<nav id="cg-nav" class="navbar navbar-inverse navbar-static-top">
-<div class="container">
-  <div class="navbar-header">
-    <a href="#" class="navbar-brand">Chris Guevara</a>
+<div id="monogram-container" class="pure-g">
+  <div id="monogram"></div>
+</div>
+
+<div id="greeting" class="pure-g">
+  <h1 id="greeting-name" class="pure-u-1-1"><span class="first-name">CHRIS</span>GUEVARA</h1>
+  <span id="greeting-msg" class="pure-u-1-1">Let's do awesome stuff.</span>
+</div>
+
+<div id="contact" class="pure-g">
+  <div class="contact-item pure-u-1 pure-u-sm-1-2">
+  	<span class="contact-icon fa fa-linkedin-square"></span>
+  	<div class="contact-text">linkedin.com/in/christopherguevara</div>
   </div>
-  <div class="collapse navbar-collapse">
-    <ul class="nav navbar-nav">
-      <li><a href="#">About Me</a></li>
-      <li><a href="#">Projects</a></li>
-    </ul>
+  <div class="contact-item pure-u-1 pure-u-sm-1-2">
+  	<span class="contact-icon fa fa-envelope-o"></span>
+  	<div class="contact-text">chrismguevara@gmail.com</div>
   </div>
 </div>
-</nav>
-
-<header id="cg-header">
-  <div class="container">
-    <div id="img-container">
-      <img src="http://placekitten.com/g/200/200" alt="">
-    </div>
-  </div>
-
-</header>
-
-<section id="about-me" class="odd">
-  <div class="container">
-    <div class="row">
-      <div class="col-md-12">
-        <p>
-          My name is Chris and I'm a software developer. I like to toy around
-          with a lot of technologies, but my current focus is MEAN stack web
-          development. I'm currently seeking a junior MEAN stack position. If
-          you'd like to contact me, I'm available
-          on <a href="http://www.linkedin.com/pub/christopher-guevara/17/8a/108">LinkedIn.</a>
-        <p>
-        <p>
-          This website's pretty bare right now, but there will be more
-          content coming soon.
-        </p>
-      </div>
-    </div>
-  </div>
-</section>
-
-<section class="even">
-  <div class="container">
-    <div class="row">
-      <div class="col-md-12"><h2>Projects</h2></div>
-    </div>
-    <div class="row">
-      <div class="col-md-12">
-        <p>Content coming soon :)</p>
-      </div>
-    </div>
-  </div>
-</section>
-
-<footer>
-  <div class="container">
-    <div class="row">
-      <h2 class="col-md-12"></h2>
-    </div>
-    <div class="row">
-      <div class="col-md-2">
-      </div>
-    </div>
-  </div>
-</footer>
 
 </body>
 </html>
