@@ -25,6 +25,15 @@
   }
 }
 
+@keyframes flipUp {
+  0% {
+    transform: translateY(50%) rotateX(-90deg);
+  }
+  100% {
+    transform: translateY(0%) rotateX(0deg);
+  }
+}
+
 .fade-in {
   animation: fadeIn 1.5s;
 }
@@ -41,20 +50,11 @@ body {
     font-family: 'Open Sans', sans-serif;
 }
 
-#monogram {
-  width: 120px;
-  height: 120px;
-  background-image: url("reset_button.svg");
-  background-size: cover;
-  /* Center the monogram */
-  margin-left: auto;
-  margin-right: auto;
-
-  transform: rotate(90deg);
-}
-
 #greeting {
+  color: white;
   text-align: center;
+
+  margin-bottom: 30px;
 }
 #greeting-name {
   font-weight: normal;
@@ -89,28 +89,41 @@ body {
   margin-right: auto;
 }
 
+/* Only show hover effect on desktop screens */
+@media screen and (min-width: 48em) {
+  .contact-text {
+    visibility: hidden;
+  }
+  .contact-item:hover > .contact-text {
+    visibility: visible;
+    animation: flipUp .5s;
+  }
+}
+
 </style>
 
 </head>
 <body>
 
-<div id="monogram-container" class="pure-g">
-  <div id="monogram"></div>
-</div>
-
-<div id="greeting" class="pure-g fade-in">
+<div id="greeting" class="pure-g">
   <h1 id="greeting-name" class="pure-u-1-1"><span class="first-name">CHRIS</span>GUEVARA</h1>
-  <span id="greeting-msg" class="pure-u-1-1">Let's work on cool stuff.</span>
+  <span id="greeting-msg" class="pure-u-1-1">Software Engineer</span>
 </div>
 
 <div id="contact" class="pure-g fade-in">
-  <div class="contact-item pure-u-1 pure-u-sm-1-2">
+  <div class="contact-item pure-u-1 pure-u-md-1-3">
     <a href="https://linkedin.com/in/christopherguevara">
   	  <span class="contact-icon fa fa-linkedin-square"></span>
   	</a>
     <div class="contact-text">linkedin.com/in/christopherguevara</div>
   </div>
-  <div class="contact-item pure-u-1 pure-u-sm-1-2">
+  <div class="contact-item pure-u-1 pure-u-md-1-3">
+    <a href="https://github.com/cg50x">
+      <span class="contact-icon fa fa-github"></span>
+    </a>
+    <div class="contact-text">github.com/cg50x</div>
+  </div>
+  <div class="contact-item pure-u-1 pure-u-md-1-3">
     <a href="mailto:chrismguevara@gmail.com">
   	  <span class="contact-icon fa fa-envelope-o"></span>
     </a>
